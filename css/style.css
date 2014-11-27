@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+
+.calculator, .calculator:before{
+	width: 276px;
+	height: 272px;
+}
+
+.header .top {
+	height: 20px;
+	background-color: #000066;
+	color: #fff;
+	padding: 0 3px;
+}
+.header .menu {
+	height: 20px;
+	line-height: 30px;
+	padding: 0 8px;
+}
+
+.header .top p {
+	margin: 0;
+	display: inline-block;
+}
+.menu li {
+	margin-right: 12px;
+}
+
+.top ul {
+	float: right;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+li {
+	float: left;
+}
+li button {
+	width: 16px;
+	height: 13px;
+}
+.buttons {
+	display: inline-block;
+	padding: 0 16px;
+}
+button{
+	color: #02007f;
+	width: 36px;
+	height: 28px;
+	margin: 3px 2px;
+	font-weight: bold;
+}
+.calculator, button { 
+	background-color: #c0c0c0; 
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #ffffff;
+	-moz-box-shadow: inset -1px -1px 0 1px #7f7f7f;
+	-webkit-box-shadow: inset -1px -1px 0 1px #7f7f7f;
+	box-shadow: inset -1px -1px 0 1px #7f7f7f;
+}
+.options button, .operators button {
+	color: #be1906;
+}
+.options { 
+	display: inline-block; 
+	width: 100%;
+}
+
+.options > *,
+.options2, .options2 > *,
+.numbers, .operators, 
+.numbers > *, .operators > * { 
+	float: left; 
+}
+.options2 {
+	width: 40px;
+}
+.numbers {
+	width: 120px;
+}
+
+.operators {
+	width: 80px;
+}
+
+.screen {
+	display: block;
+	width: 250px;
+	height: 26px;
+	margin: 13px auto;
+	text-align: right;
+	line-height: 24px;
+	background-color: #ffffff;
+}
+
+button.empty {
+	background-color: #c0c0c0;
+	margin-right: 42px;
+	float: left;
+}
+button.back {
+	width: 76px;
+}
+.screen, button.empty {
+	border-top: 1px solid #000000;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	border-left: 1px solid #000000;
+	-moz-box-shadow: inset 1px 1px 0 0 #7f7f7f;
+	-webkit-box-shadow: inset 1px 1px 0 0 #7f7f7f;
+	box-shadow: inset 1px 1px 0 0 #7f7f7f;
+}

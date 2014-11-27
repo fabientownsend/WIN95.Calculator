@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="machine">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body ng-controller="CalculatorController as calculator">
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<div class="calculator">
+			<div class="header">
+				<div class="top">
+					<p>Calculator</p>
+					<ul>
+						<li><button>x</button></li>
+						<li><button>x</button></li>
+						<li><button>x</button></li>
+					</ul>
+				</div>
+				<div class="menu">
+					<ul>
+						<li>Edit<li>
+						<li>View<li>
+						<li>Help<li>
+					</ul>
+				</div>
+			</div>
+			<p class="screen">{{calculator.display}}</p>
+			<div class="buttons">
+				<div class="options">
+					<button class="empty"></button>
+					<button class="back">Back</button>
+					<button>CE</button>
+					<button ng-click="calculator.reset()">C</button>
+				</div>
+				<div class="options2">
+					<button>Mc</button>
+					<button>Mr</button>
+					<button>Ms</button>
+					<button>M+</button>
+				</div>
+				<div class="numbers">
+					<button ng-click="calculator.setNumber(7)">7</button>
+					<button ng-click="calculator.setNumber(8)">8</button>
+					<button ng-click="calculator.setNumber(9)">9</button>
+					<button ng-click="calculator.setNumber(4)">4</button>
+					<button ng-click="calculator.setNumber(5)">5</button>
+					<button ng-click="calculator.setNumber(6)">6</button>
+					<button ng-click="calculator.setNumber(1)">1</button>
+					<button ng-click="calculator.setNumber(2)">2</button>
+					<button ng-click="calculator.setNumber(3)">3</button>
+					<button ng-click="calculator.setNumber(0)">0</button>
+					<button>+/-</button>
+					<button>.</button>
+				</div>
+				<div class="operators">
+					<button ng-click="calculator.setOperator('/')">/</button>
+					<button>sqrt</button>
+					<button ng-click="calculator.setOperator('*')">*</button>
+					<button>%</button>
+					<button ng-click="calculator.setOperator('-')">-</button>
+					<button>1/x</button>
+					<button ng-click="calculator.setOperator('+')">+</button>
+					<button ng-click="calculator.getResult()">=</button>
+				</div>
+			</div>
+			<p>number : {{calculator.number}} </p>
+			<p>operator : {{calculator.operator}}</p>
+			<p>total : {{calculator.total}}</p>
+		</div>
+	</body>
+</html>
